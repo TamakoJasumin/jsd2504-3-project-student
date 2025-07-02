@@ -105,6 +105,11 @@ const routes = [
     name: 'RView',
     component: () => import('../views/RView.vue')
   },
+    {
+    path: '/SSView',
+    name: 'SSView',
+    component: () => import('../views/SSView.vue')
+  },
   {
     path: '/SView',
     name: 'SView',
