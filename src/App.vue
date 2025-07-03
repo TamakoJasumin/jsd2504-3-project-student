@@ -22,7 +22,7 @@
 	<router-link to="/RView">菜单组件</router-link> |
 	<router-link to="/SSView">表格组件</router-link> |
 	<router-link to="/SView">布局组件</router-link> |
-	<router-link to="/TView">容器组件</router-link> |
+	<router-link to="/TView">TView</router-link> |
 	<router-link to="/UView">UView</router-link> |
 	<router-link to="/VView">卡片组件</router-link> |
 	<router-link to="/WView">日期时间选择器组件</router-link> |
