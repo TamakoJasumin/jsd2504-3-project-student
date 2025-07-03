@@ -102,8 +102,39 @@ const productArr = ref([
 				<el-menu-item index="5">数码科技</el-menu-item>
 			</el-menu>
 		</el-header>
-		<el-main></el-main>
-		<el-footer></el-footer>
+		<el-main>
+			<el-carousel style="height: 240px ;width: 100%">
+				<el-carousel-item v-for="item in bannerArr">
+					<img :src="item" alt="" style="width: 100%;height: 100%">
+				</el-carousel-item>
+			</el-carousel>
+			<el-row :gutter="10">
+				<el-col :span="6" v-for="item in productArr" style="margin: 10px 0;">
+					<el-card>
+						<img :src="item.url" alt="" style="width: 100%">
+						<p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">{{item.title}}</p>
+						<div>
+							<span style="float: left ;color: red">${{item.price}}<s>{{item.oldPrice}}</s></span>
+							<span style="float: right ;color: gray">销量：{{item.saleCount}}</span>
+						</div>
+					</el-card>
+				</el-col>
+			</el-row>
+		</el-main>
+		<el-footer style="height: 200px;background-color: #282c30;padding-top: 40px;color: #666">
+			<p>
+				loram ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam asperiores at
+				autem consequatur consequuntur culpa cum cumque delectus dicta dignissimos distinctio dolorem dolorum
+			</p>
+			<p>
+				loram ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam asperiores at
+				autem consequatur consequuntur culpa cum cumque delectus dicta dignissimos distinctio dolorem dolorum
+			</p>
+			<p>
+				loram ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam asperiores at
+				autem consequatur consequuntur culpa cum cumque delectus dicta dignissimos distinctio dolorem dolorum
+			</p>
+		</el-footer>
 	</el-container>
 </template>
 

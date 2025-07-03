@@ -13,7 +13,7 @@
 	<el-switch   v-model="value2"
 	             class="ml-2"
 	             style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"></el-switch>
-	<el-switch v-model="value3" :active-value="1" :inactive-value="0"></el-switch>
+	<el-switch v-model="value3" active-value="1" inactive-value="0"></el-switch>
 	<el-switch v-model="value4" :active-value="'1'" :inactive-value="'0'"></el-switch>
 </template>
 
