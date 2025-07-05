@@ -1,8 +1,5 @@
 <script setup>
-// #282c30 #666 200高度 上内内间距40
-// Copyright © 北京达内金桥科技有限公司版权所有 京ICP备12003709号-3 京公网安备 11010802029572号
-// 涵盖20余门课程体系，致力于打造权威的IT职业教育学习平台
-// 达内在线WWW.TMOOC.CN 专注于IT职业技能培训
+
 //1.准备轮播图数组
 import {ref} from "vue";
 
@@ -114,7 +111,7 @@ const productArr = ref([
 						<img :src="item.url" alt="" style="width: 100%">
 						<p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">{{item.title}}</p>
 						<div>
-							<span style="float: left ;color: red">${{item.price}}<s>{{item.oldPrice}}</s></span>
+							<span style="float: left ;color: red">${{item.price}} <s>{{item.oldPrice}}</s></span>
 							<span style="float: right ;color: gray">销量：{{item.saleCount}}</span>
 						</div>
 					</el-card>
@@ -123,17 +120,15 @@ const productArr = ref([
 		</el-main>
 		<el-footer style="height: 200px;background-color: #282c30;padding-top: 40px;color: #666">
 			<p>
-				loram ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam asperiores at
-				autem consequatur consequuntur culpa cum cumque delectus dicta dignissimos distinctio dolorem dolorum
+				Copyright © 北京达内金桥科技有限公司版权所有 京ICP备12003709号-3 京公网安备 11010802029572号
 			</p>
 			<p>
-				loram ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam asperiores at
-				autem consequatur consequuntur culpa cum cumque delectus dicta dignissimos distinctio dolorem dolorum
+				涵盖20余门课程体系，致力于打造权威的IT职业教育学习平台
 			</p>
 			<p>
-				loram ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam asperiores at
-				autem consequatur consequuntur culpa cum cumque delectus dicta dignissimos distinctio dolorem dolorum
+				达内在线WWW.TMOOC.CN 专注于IT职业技能培训
 			</p>
+			
 		</el-footer>
 	</el-container>
 </template>

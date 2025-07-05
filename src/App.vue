@@ -27,7 +27,7 @@
 	<router-link to="/VView">卡片组件</router-link> |
 	<router-link to="/WView">日期时间选择器组件</router-link> |
 	<router-link to="/XView">商品列表综合练习</router-link> |
-	<router-link to="/YView">YView</router-link> |
+	<router-link to="/YView">员工列表练习</router-link> |
 	<router-link to="/ZView">ZView</router-link>
 	</nav>
   <router-view/>
